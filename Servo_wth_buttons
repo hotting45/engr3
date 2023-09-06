@@ -15,8 +15,7 @@ while True:
         print("BTN1 is down")
     else:
         print("BTN1 is up")
-        pass
-
+       
     time.sleep(0.1) # sleep for debounce
      
     if btn2.value:
