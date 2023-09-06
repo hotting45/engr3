@@ -23,5 +23,5 @@ while True:
         print("BTN2 is down")
     else:
      print("BTN2 is up")
-pass
-time.sleep(0.1) # sleep for debounce
+    pass
+    time.sleep(0.1) # sleep for debounce
