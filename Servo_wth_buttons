@@ -1,37 +1,25 @@
-from signal import signal, SIGTERM, SIGHUP, pause
-from gpiozero import Servo, Button
-from time import sleep
+import time
+import board
+from digitalio import DigitalInOut, Direction, Pull
 
-def safe_exit(signum, frame):
-    exit(1)
+btn1 = DigitalInOut(board.SWITCH)
+btn1.direction = Direction.INPUT
+btn1.pull = Pull.DOWN
 
-def move_left():
-    if left.held_time > (right.held_time or 0):
-        if servo.value > -1:
-            servo.value -= 0.01
+btn2 = DigitalInOut(board.SWITCH)
+btn2.direction = Direction.INPUT
+btn2.pull = Pull.DOWN
 
-def move_right():
-    if right.held_time > (left.held_time or 0):
-        if servo.value < 1:
-            servo.value += 0.01
+while True:
+    if not btn1.value:
+        print("BTN1 is down")
+    else:
+        print("BTN1 is up")
+        pass
 
-servo = Servo(8, min_pulse_width=0.4/1000, max_pulse_width=2.5/1000)
-left = Button(9, hold_time=0.01, hold_repeat=True)
-right = Button(10, hold_time=0.01, hold_repeat=True)
-
-try:
-    signal(SIGTERM, safe_exit)
-    signal(SIGHUP, safe_exit)
-
-    left.when_held = move_left
-    right.when_held = move_right
-
-    pause()
-
-except KeyboardInterrupt:
-    pass
-
-finally:
-    servo.mid()
-    sleep(0.5)
-    servo.close()   
+    time.sleep(0.1) # sleep for debounce
+     if not btn2.value:
+        print("BTN2 is down")
+    else:
+        print("BTN2 is up")
+        pass
