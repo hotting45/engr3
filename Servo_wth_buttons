@@ -27,8 +27,8 @@ while True:
           
     if btn2.value:
         print("BTN2 is down")
-    for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
-     my_servo.angle = angle
+        for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
+         my_servo.angle = angle
 
-     time.sleep(0.1)
+    time.sleep(0.1)
    
