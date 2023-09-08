@@ -104,7 +104,7 @@ from digitalio import DigitalInOut, Direction, Pull
 from  adafruit_motor import servo
 
 
-# create a PWMOut object on Pin A2.
+
 pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
 
 btn1 = DigitalInOut(board.D5)
@@ -118,7 +118,6 @@ btn2.direction = Direction.INPUT
 btn2.pull = Pull.DOWN
 
 prev_state = btn2.value
-# Create a servo object, my_servo.
 my_servo = servo.Servo(pwm)
 
 while True:
