@@ -96,7 +96,13 @@ while True:
 ## Servo_button_Control
 
 ### Description & Code
-"""CircuitPython Essentials Servo standard servo example"""
+* **The symptoms:** The servo would jutter
+* **The problem :** The wiring was incorrect somehow 
+* **The Solution:** had to spend a long time wiring 
+
+
+
+```python
 import time
 import board
 import pwmio
