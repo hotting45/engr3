@@ -137,7 +137,10 @@ while True:
         for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
             my_servo.angle = angle
     
-    time.sleep(0.35)  
+    time.sleep(0.35)
+
+```
+
 
 ### Evidence
 
