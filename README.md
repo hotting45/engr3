@@ -144,9 +144,11 @@ while True:
 
 ### Evidence
 
-Pictures / Gifs of your work should go here.  You need to communicate what your thing does.
+
 
 ### Wiring
+![image](https://github.com/hotting45/engr3/assets/143732418/19aa3482-738e-461d-9123-cc379e606869)
+
 
 ### Reflection
 
