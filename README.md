@@ -164,7 +164,7 @@ Distance_sensor
 * **The Solution:** moved the file to the right spot 
 
 
-
+```python
 import time
 import board
 import adafruit_hcsr04  
