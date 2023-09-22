@@ -159,7 +159,7 @@ I quite enjoyed getting to experiment with this new coding languge . the challen
 ## NextAssignment
 Distance_sensor
 ### Description & Code
-Get a ditance sensor too change the color of the Neopixel based on distance
+Get a distance sensor too change the color of the Neopixel based on distance
 * **The symptoms:** Code wouldnt read a certain file 
 * **The problem :** that file wasnt where it needed to be 
 * **The Solution:** moved the file to the right spot 
