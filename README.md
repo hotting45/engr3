@@ -236,7 +236,7 @@ while True:
 
 
 ### Evidence
-
+![ezgif com-video-to-gif (2)](https://github.com/hotting45/engr3/blob/main/ezgif.com-video-to-gif.gif?raw=true)
 ### Wiring
 ![image](https://github.com/hotting45/engr3/assets/143732418/e23cc38b-d1a3-4fdd-acf2-603bd078db5a)
 
