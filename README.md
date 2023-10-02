@@ -65,9 +65,9 @@ I quite enjoyed getting to experiment with this new coding language. the challen
 
 
 ### Description & Code
-# Distance_sensor
-# henry 
-# Color on neo pixel will change based on distance 
+ Distance_sensor
+ henry 
+ Color on neo pixel will change based on distance 
 Get a distance sensor too change the color of the Neopixel based on distance
 * **The symptoms:** Code wouldnt read a certain file 
 * **The problem :** that file wasnt where it needed to be 
