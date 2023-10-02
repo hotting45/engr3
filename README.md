@@ -1,53 +1,7 @@
 
-### Description & Code
-
-* **The symptoms:**  LCD acting weird OR trouble with usb connection / serial monitor / uploading / etc.
-* **The problem :** The LCDs occasionally draw too much power when we turn on the boards, and that makes parts of its serial communications crash.
-* **The Solution:** Add this code, and wire a switch up, like the wiring diagram below:
-
-
-
-```python
-import board
-import time
-import digitalio
-from lcd.lcd import LCD
-from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
-
-# turn on lcd power switch pin
-lcdPower = digitalio.DigitalInOut(board.D8)
-lcdPower.direction = digitalio.Direction.INPUT
-lcdPower.pull = digitalio.Pull.DOWN
-
-# Keep the I2C protocol from running until the LCD has been turned on
-# You need to flip the switch on the breadboard to do this.
-while lcdPower.value is False:
-    print("still sleeping")
-    time.sleep(0.1)
-
-# Time to start up the LCD!
-time.sleep(1)
-print(lcdPower.value)
-print("running")
-
-i2c = board.I2C()
-lcd = LCD(I2CPCF8574Interface(i2c, 0x27), num_rows=2, num_cols=16)
-
-
-# Loop forever.
-while True:
-
-```
-### Wiring
-
-![WiringSolution](images/I2C_M4_Solution.png)
-
-
-
-
-
-
 ## Servo_button_Control
+# Henry
+# Makes a servo smoothly rotate back and forth
 
 ### Description & Code
 * **The symptoms:** The servo would jutter
@@ -105,14 +59,15 @@ while True:
 
 
 ### Reflection
-I quite enjoyed getting to experiment with this new coding languge . the challenges where figuiring out how to translate the things i new over into this whole new coding langauge. 
+I quite enjoyed getting to experiment with this new coding language. the challenge where figuring out how to translate the things I new over into this whole new coding language. 
 
 
 
 
-## NextAssignment
-Distance_sensor
 ### Description & Code
+# Distance_sensor
+# henry 
+# Color on neo pixel will change based on distance 
 Get a distance sensor too change the color of the Neopixel based on distance
 * **The symptoms:** Code wouldnt read a certain file 
 * **The problem :** that file wasnt where it needed to be 
@@ -196,4 +151,4 @@ while True:
 
 ### Reflection
 I have never had a nice time with the distance sensors always having them bug out on me, but this time thanks to the help of many teachers and a vast amount of information located on the place called "the internet" and my fellow students Julein and Will for helping me in this project. I mainly struggled with getting the Neopixel to show color but even that was quickly resolved thanks to my teamates.
-Credits to Will wright for the code
+**Credits to Will Wright for the code****
