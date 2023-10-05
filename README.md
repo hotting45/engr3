@@ -145,4 +145,23 @@ while True:
 
 ### Reflection
 I have never had a nice time with the distance sensors always having them bug out on me, but this time thanks to the help of many teachers and a vast amount of information located on the place called "the internet" and my fellow students Julein and Will for helping me in this project. I mainly struggled with getting the Neopixel to show color but even that was quickly resolved thanks to my teamates.
-**Credits to Will Wright for the code****
+**Credits to Will Wright for the code**
+
+## Onshape_Assignment_Template
+
+### Assignment Description
+
+In this assignment our goal was to create a coat hanger In Onshape using skills that we had learned previously in engineering. And also mix in new skills that we just learned for the pourpose of this assignemnt 
+### Evidence
+    ![image](https://github.com/hotting45/engr3/assets/143732418/147cb5d7-2698-4809-ac0e-20bb2659bd8c)
+    ![image](https://github.com/hotting45/engr3/assets/143732418/2e01bfc3-c87d-429c-9ede-58dd10be50db)
+
+
+
+### Part Link 
+](https://cvilleschools.onshape.com/documents/72eeef4074d09830aad222b3/w/c27749ab2ef9f59f94af26ae/e/f0f49ec3326317e195d4c5ff?renderMode=0&uiState=651ed69c613477675da78738)
+### Reflection
+
+What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
+
+&nbsp;
