@@ -150,7 +150,6 @@ I have never had a nice time with the distance sensors always having them bug ou
 ## Onshape_Assignment_Template
 
 ### Assignment Description
-
 In this assignment our goal was to create a coat hanger In Onshape using skills that we had learned previously in engineering. And also mix in new skills that we just learned for the pourpose of this assignemnt 
 ### Evidence
  ![image](https://github.com/hotting45/engr3/assets/143732418/6467cbc1-e384-4bc1-92df-08dd0d9a851c)
@@ -159,7 +158,5 @@ In this assignment our goal was to create a coat hanger In Onshape using skills 
 ### Part Link 
 ](https://cvilleschools.onshape.com/documents/72eeef4074d09830aad222b3/w/c27749ab2ef9f59f94af26ae/e/f0f49ec3326317e195d4c5ff?renderMode=0&uiState=651ed69c613477675da78738)
 ### Reflection
-
-What went wrong / was challenging, how'd you figure it out, and what did you learn from that experience? Your goal for the reflection is to pass on knowledge that will make this assignment better or easier for the next person. Think about your audience for this one, which may be "future you" (when you realize you need some of this code in three months), me, or your college admission committee!
-
+I quite enjoyed the first onshape assignement of the year. it felt good to get back into it with this assignemnt the perfect mix of challenges and new things. Although i struggled a bit with figuring out thebest places to reflect things and lengths in general. it still helped me to get back into the flow of things after summer break.
 &nbsp;
