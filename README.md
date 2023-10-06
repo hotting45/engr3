@@ -149,7 +149,7 @@ I have never had a nice time with the distance sensors always having them bug ou
 
 ## Coat_hanger
 # Henry
-# Makes a servo smoothly rotate back and forth
+# Make a coat hanger 
 
 
 ### Assignment Description
