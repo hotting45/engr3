@@ -147,7 +147,10 @@ while True:
 I have never had a nice time with the distance sensors always having them bug out on me, but this time thanks to the help of many teachers and a vast amount of information located on the place called "the internet" and my fellow students Julein and Will for helping me in this project. I mainly struggled with getting the Neopixel to show color but even that was quickly resolved thanks to my teamates.
 **Credits to Will Wright for the code**
 
-## Onshape_Assignment_Template
+## Coat_hanger
+# Henry
+# Makes a servo smoothly rotate back and forth
+
 
 ### Assignment Description
 In this assignment our goal was to create a coat hanger In Onshape using skills that we had learned previously in engineering. And also mix in new skills that we just learned for the pourpose of this assignemnt 
