@@ -153,8 +153,9 @@ I have never had a nice time with the distance sensors always having them bug ou
 
 In this assignment our goal was to create a coat hanger In Onshape using skills that we had learned previously in engineering. And also mix in new skills that we just learned for the pourpose of this assignemnt 
 ### Evidence
-    ![image](https://github.com/hotting45/engr3/assets/143732418/147cb5d7-2698-4809-ac0e-20bb2659bd8c)
-    ![image](https://github.com/hotting45/engr3/assets/143732418/2e01bfc3-c87d-429c-9ede-58dd10be50db)
+  ![image](https://github.com/hotting45/engr3/assets/143732418/37b54929-65cd-492e-99e8-ac2a59752e65)
+![image](https://github.com/hotting45/engr3/assets/143732418/13464e18-6ac9-40f0-a082-fb1444faeb15)
+
 
 
 
