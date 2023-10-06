@@ -163,3 +163,18 @@ In this assignment our goal was to create a coat hanger In Onshape using skills 
 ### Reflection
 I quite enjoyed the first onshape assignement of the year. it felt good to get back into it with this assignemnt the perfect mix of challenges and new things. Although i struggled a bit with figuring out thebest places to reflect things and lengths in general. it still helped me to get back into the flow of things after summer break.
 &nbsp;
+
+## Swing_Arm
+# Henry
+# Make a swing arm 
+
+
+### Assignment Description
+In this assignment our goal was to create a Swing arm In Onshape using multiple diffrent sketches and tools while setting a variable sheet 
+### Evidence
+![image](https://github.com/hotting45/engr3/assets/143732418/2c52d35c-fa97-4c25-aabc-ea2e5a6eba65)
+![image](https://github.com/hotting45/engr3/assets/143732418/66a0f1b1-1a7e-49b9-9a96-a74624c3a21e)
+### Part Link 
+https://cvilleschools.onshape.com/documents/72eeef4074d09830aad222b3/w/c27749ab2ef9f59f94af26ae/e/f0f49ec3326317e195d4c5ff
+### Reflection
+In this assignment there where a few challenges that i ran in too liek the fact that i just couldnt extrude the sketch for about 15 minutes until randomly it started working because i removed my construction lines and it just started working for some reason. Overall i dislike this project because i struggle with comples thinking due too my lack of a forebrain.
