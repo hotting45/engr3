@@ -147,6 +147,51 @@ while True:
 I have never had a nice time with the distance sensors always having them bug out on me, but this time thanks to the help of many teachers and a vast amount of information located on the place called "the internet" and my fellow students Julein and Will for helping me in this project. I mainly struggled with getting the Neopixel to show color but even that was quickly resolved thanks to my teamates.
 **Credits to Will Wright for the code**
 
+### Description & Code
+ * **photointerrupter
+ * **henry 
+ * **Make a photinterrupter read when intterupted 
+
+```python
+from digitalio import DigitalInOut, Direction, Pull
+import time
+import board
+
+interrupter = DigitalInOut(board.D7)
+interrupter.direction = Direction.INPUT
+interrupter.pull = Pull.UP
+
+counter = 0
+
+photo = False
+state = False
+
+max = 4
+start = time.time()
+while True:
+    photo = interrupter.value
+    if photo and not state:
+            counter += 1
+    state = photo
+
+    remaining = max - time.time()
+
+    if remaining <= 0:
+        print("Number of Interrupts that occured:", str(counter))
+        max = time.time() + 4
+        counter = 0
+```
+
+### Evidence
+
+### Wiring
+
+
+### Reflection
+This was very similar to what i did on arduino for a photointterupter so i mainly just used the code i got on arduino as a refrence. it was a little hard to figure out the printing because im a little stupid but will helped me out with that 
+**Credits to Will Wright for the code**
+
+
 ## Coat_hanger
 # Henry
 # Make a coat hanger 
