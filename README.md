@@ -63,7 +63,7 @@ I quite enjoyed getting to experiment with this new coding language. the challen
 
 ### Description & Code
  * **Distance_sensor
- * **henry 
+ * **Henry 
  * **Color on neo pixel will change based on distance 
 Get a distance sensor too change the color of the Neopixel based on distance
 
