@@ -185,6 +185,7 @@ while True:
 ### Evidence
 
 ### Wiring
+![image](https://github.com/hotting45/engr3/assets/143732418/e3c70285-6c41-4483-961c-cf1edda4eaef)
 
 
 ### Reflection
