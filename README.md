@@ -224,3 +224,20 @@ In this assignment our goal was to create a Swing arm In Onshape using multiple 
 https://cvilleschools.onshape.com/documents/72eeef4074d09830aad222b3/w/c27749ab2ef9f59f94af26ae/e/f0f49ec3326317e195d4c5ff
 ### Reflection
 In this assignment there where a few challenges that i ran in too liek the fact that i just couldnt extrude the sketch for about 15 minutes until randomly it started working because i removed my construction lines and it just started working for some reason. Overall i dislike this project because i struggle with comples thinking due too my lack of a forebrain.
+
+## Multi_part_cylinder 
+# Henry
+#Many pieces make up the one
+
+
+### Assignment Description
+In this assignment our goal was to build of the cylinder in the center in order too form a multi-part cylinder
+### Evidence
+ ![image](https://github.com/hotting45/engr3/assets/143732418/3bd0524f-8284-4b27-b977-37d00626baf0)
+![image](https://github.com/hotting45/engr3/assets/143732418/cb09068e-812b-4fdc-8a71-39f1a88ee934)
+
+### Part Link 
+https://cvilleschools.onshape.com/documents/56f2a8c813312ce6582f4210/w/a0917267fcd7e078a11680fe/e/1196e5971a9e23eb1dda5d82?renderMode=0&uiState=6532950605d4c23820c2212e
+### Reflection
+I never wanna do this again because oh my god sometimes things went wrong and you had to redo everything. Like the top bit if you messed up one part you would have to do it all over and i despise that.
+
