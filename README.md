@@ -227,7 +227,7 @@ In this assignment there where a few challenges that i ran in too liek the fact 
 
 ## Multi_part_cylinder 
 # Henry
-#Many pieces make up the one
+# Many pieces make up the one
 
 
 ### Assignment Description
