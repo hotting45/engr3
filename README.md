@@ -148,6 +148,40 @@ I have never had a nice time with the distance sensors always having them bug ou
 **Credits to Will Wright for the code**
 
 ### Description & Code
+## Motor_Control
+# Henry
+# Make a Motor rotate 
+
+
+
+```python
+import board
+import analogio
+from digitalio import DigitalInOut
+import time 
+import pwmio 
+turner = analogio.AnalogIn(board.A1)
+motor = pwmio.PWMOut(board.D9)
+
+while True:
+    print(turner.value) #show value 
+    time.sleep(0.25)
+    motor.duty_cycle = turner.value 
+
+```
+
+
+### Evidence
+
+
+
+### Wiring.
+![image](https://github.com/hotting45/engr3/assets/143732418/753e1b4c-6a32-4865-8684-713a6a2110bd)
+
+### Reflection
+HMMMMMMMMMMM i dont like this at all it was too difficult and was probably made harder than my own stupidity. It broke for absolutely no reason at all and i had to re-do it so many damn times. there was no joy in this project and i wanna cry. "Credits to Julian for giving me code that worked and lending me his diagram"
+
+### Description & Code
  * **photointerrupter
  * **henry 
  * **Make a photinterrupter read when intterupted 
