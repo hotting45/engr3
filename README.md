@@ -172,7 +172,8 @@ while True:
 
 
 ### Evidence
-
+![ezgif com-video-to-gif (2)](https://github.com/wwright71/engr3/assets/143732572/cf7467b3-c4ce-4a99-bf5c-53ded6fd28f8)
+*Credits too Will Whright*
 
 
 ### Wiring.
@@ -273,5 +274,5 @@ In this assignment our goal was to build of the cylinder in the center in order 
 ### Part Link 
 https://cvilleschools.onshape.com/documents/56f2a8c813312ce6582f4210/w/a0917267fcd7e078a11680fe/e/1196e5971a9e23eb1dda5d82?renderMode=0&uiState=6532950605d4c23820c2212e
 ### Reflection
-I never wanna do this again because oh my god sometimes things went wrong and you had to redo everything. Like the top bit if you messed up one part you would have to do it all over and i despise that.
+I never wanna do this again because oh my god sometimes things went wrong and you had to redo everything. Like the top bit if you messed up one part you would have to do it all over and i despise that. althogh it was quite rewarding too figure out what was going wrong and thanks too the help of everyone around me i was abletoo figure it out. And when things went wrong my peers helped me out with this and when finally getting it done a found some joy in this wonderful little tubr. 
 
