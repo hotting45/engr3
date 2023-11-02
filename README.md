@@ -287,6 +287,8 @@ In this assignment our goal was to make a one part onshape document in order to 
 ![image](https://github.com/hotting45/engr3/assets/143732418/d2bda2ef-a756-455b-8537-89f69b398bc4)
 ![image](https://github.com/hotting45/engr3/assets/143732418/568d7ace-8653-4bb6-99ef-26f7220fd89c)
 ![image](https://github.com/hotting45/engr3/assets/143732418/43b1c744-14ab-4661-ae4b-5ed32c00977d)
+![image](https://github.com/hotting45/engr3/assets/143732418/a817426d-57bf-4d03-ac77-303088d8314b)
+
 ### Part Link 
 https://cvilleschools.onshape.com/documents/5f860a0ef36c999fb466076e/w/8a8fff1d3d39096690b3506e/e/71564d859871e6b875bdd8bc?renderMode=0&uiState=6543b974b9ea18220db2042b
 ### Reflection
