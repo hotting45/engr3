@@ -56,7 +56,7 @@ while True:
 
 
 ### Reflection
-I quite enjoyed getting to experiment with this new coding language. the challenge where figuring out how to translate the things I new over into this whole new coding language. 
+For a first assignment of the year in a new coding langauge this is one good way to start of the year. With this being a new coding language it couldnt be to hard or else we couldnt do it and they struck a perfect balance beatween using what we already knew from arduino and helping us add on the Python. And while i still struggled with some parts of it i was able to work my way through with the help of my peers. 
 
 
 
