@@ -276,3 +276,19 @@ https://cvilleschools.onshape.com/documents/56f2a8c813312ce6582f4210/w/a0917267f
 ### Reflection
 I never wanna do this again because oh my god sometimes things went wrong and you had to redo everything. Like the top bit if you messed up one part you would have to do it all over and i despise that. althogh it was quite rewarding too figure out what was going wrong and thanks too the help of everyone around me i was abletoo figure it out. And when things went wrong my peers helped me out with this and when finally getting it done a found some joy in this wonderful little tubr. 
 
+## One_Part
+# Henry
+# One is the loneliest number
+
+
+### Assignment Description
+In this assignment our goal was to make a one part onshapedocumanet in order to prep for the certification exam 
+### Evidence
+![image](https://github.com/hotting45/engr3/assets/143732418/d2bda2ef-a756-455b-8537-89f69b398bc4)
+![image](https://github.com/hotting45/engr3/assets/143732418/568d7ace-8653-4bb6-99ef-26f7220fd89c)
+
+### Part Link 
+https://cvilleschools.onshape.com/documents/5f860a0ef36c999fb466076e/w/8a8fff1d3d39096690b3506e/e/71564d859871e6b875bdd8bc?renderMode=0&uiState=6543b974b9ea18220db2042b
+### Reflection
+THis was a much easier assignment than the multipart cylinder obviously just because it was just one part. I had fun with this and it was overall just an easy one day asssignment. I struggled a bit at the start with figuring out how everything would come together and the weird angles but with some help i figured it out.
+
