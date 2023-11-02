@@ -282,7 +282,7 @@ I never wanna do this again because oh my god sometimes things went wrong and yo
 
 
 ### Assignment Description
-In this assignment our goal was to make a one part onshapedocumanet in order to prep for the certification exam 
+In this assignment our goal was to make a one part onshape document in order to prep for the certification exam 
 ### Evidence
 ![image](https://github.com/hotting45/engr3/assets/143732418/d2bda2ef-a756-455b-8537-89f69b398bc4)
 ![image](https://github.com/hotting45/engr3/assets/143732418/568d7ace-8653-4bb6-99ef-26f7220fd89c)
