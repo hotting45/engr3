@@ -312,3 +312,19 @@ https://cvilleschools.onshape.com/documents/b78a17a8c2373f4d91ded51d/w/ae3b09df0
 ### Reflection
 The most free onshape assignemnt ever finishing it in a few minutes and although it was good practice it was still very easy. Its good prep though for the onshape certification exam with the plate having the basic skills necsassary in order to complete it. Would do it again 8/10 
 
+## Multi-part colummn 
+# Henry
+# A microphone stand?
+
+
+### Assignment Description
+This assignemnt has a goal of making multiple diffrent parts focused around one central piece to make a microphone stand
+### Evidence
+![image](https://github.com/hotting45/engr3/assets/143732418/4c24a7fc-7509-4a20-8747-ca8eb9f52f77)
+![image](https://github.com/hotting45/engr3/assets/143732418/ffb55c4c-f92a-4ad7-a897-74a5e866111f)
+
+### Part Link 
+https://cvilleschools.onshape.com/documents/a195619daf67fd79ed9d435b/w/138b6f02ac3ea1f025dc977f/e/24b8b9d8104d61907a247557?renderMode=0&uiState=654c197d913c3b76e251b722
+### Reflection
+This assignment the goal was to create a microphone stand comprised of four diffrent pieces a circular base, a T shaped top, and a screw all coming together to make the final piece. I struggled a bit with the bottom piece for some reason? i had to restart it because it would flip uspidedown when i tried to fix the extrude costing me a bit of extra time. But other than that it was smooth sailing getting the top bit done very quickly and the screw was a free little bonus piece that took me a few seconds. Overall a very fun assignemnt that was not as hard as the  
+
