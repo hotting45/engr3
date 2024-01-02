@@ -64,7 +64,8 @@ For a first assignment of the year in a new coding langauge this is one good way
 ### Description & Code
  * **Distance_sensor
  * **Henry 
- * **Color on neo pixel will change based on distance 
+ * **Color on neo pixel will change based on distance
+ * **Code courtesy of julian 
 Get a distance sensor too change the color of the Neopixel based on distance
 
 
