@@ -364,7 +364,7 @@ while True:
     last_index = None
     menu_index = 0 
     menu[menu_index_lcd]
-    menu[0] = "stop"
+    menu[0] = "stop01
     menu[1] = "caution"        
     menu[2] = "STOP"
     if not button.value and button_state is None:
