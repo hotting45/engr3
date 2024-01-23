@@ -388,7 +388,6 @@ while True:
 ```
 
 ### Evidence
-https://github.com/hotting45/engr3/assets/143732418/787085df-eb0f-4038-9bdb-79126c1d463f
-
+https://github.com/hotting45/engr3/assets/143732418/5a7dd842-ac6f-4d7d-b772-e9c81da91056
 ### Reflection
 In this assignment the goal was to make a rotary encoder that would change the light on the board and change what it says on the board based on what the rotary encodewr does. This assignemnt sucked on a diffrent level of annoying because my files would just randomly just stop working every now and then and with no coherant way of being able to fix it. But overall it was relativly easy coding and wiring 
