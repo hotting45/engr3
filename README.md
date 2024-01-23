@@ -2,7 +2,7 @@
 
 ### Description & Code
 ## Servo_button_Control
-# Henry
+# Henry o
 # Makes a servo smoothly rotate back and forth
 
 
