@@ -392,3 +392,21 @@ https://github.com/hotting45/engr3/assets/143732418/5a7dd842-ac6f-4d7d-b772-e9c8
 thank you julian
 ### Reflection
 In this assignment the goal was to make a rotary encoder that would change the light on the board and change what it says on the board based on what the rotary encodewr does. This assignemnt sucked on a diffrent level of annoying because my files would just randomly just stop working every now and then and with no coherant way of being able to fix it. But overall it was relativly easy coding and wiring 
+
+
+## The_
+# Henry
+# Very Simple plate 
+
+
+### Assignment Description
+In this assignment our goal was to make a plate in order to prepare for the onshape certificate exam 
+### Evidence
+![image](https://github.com/hotting45/engr3/assets/143732418/5656334c-1aa3-4a8b-b4e8-4aac4fbcec2b)
+![image](https://github.com/hotting45/engr3/assets/143732418/e2c0cb8b-90f0-4d91-85db-ec5d0e53a1c4)
+
+
+### Part Link 
+https://cvilleschools.onshape.com/documents/b78a17a8c2373f4d91ded51d/w/ae3b09df0b95fb2665123ed4/e/5ca93e8f7996a2c1288b0a00?renderMode=0&uiState=65450fb56ca5354c20bb29b1
+### Reflection
+The most free onshape assignemnt ever finishing it in a few minutes and although it was good practice it was still very easy. Its good prep though for the onshape certification exam with the plate having the basic skills necsassary in order to complete it. Would do it again 8/10 
