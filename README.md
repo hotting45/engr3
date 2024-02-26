@@ -408,3 +408,81 @@ Make a robot arm that can pick things such as a stack of cards
 https://cvilleschools.onshape.com/documents/7cba0d31810a42f9aad7c00f/w/408cd61fe599dccad34ea58a/e/f3b21311ff1bc67460a1a3e3?renderMode=0&uiState=65dcb65d824aca0e1ac6da7d
 ### Reflection
 This was a fun warmup and overall quiet enjoyable overall. And although i had a bit of trouble assmebling it in the assembly tab i just kept ramming my head into the problem until it eventually started workin. This was a fun first onshape assignment in a while 7/10
+
+### Description & Code
+ * ** steppa motor
+ * **henry 
+ * ** motor be steppin 
+
+```python
+import asyncio
+import board
+import keypad 
+import time 
+import digitalio 
+from adafruit_motor import stepper 
+
+DELAY = 0.01
+STEPS = 100
+
+
+coils = (
+     digitalio.DigitalInOut(board.D9),   # A1
+     digitalio.DigitalInOut(board.D10),  # A2
+     digitalio.DigitalInOut(board.D11),  # B1  
+     digitalio.DigitalInOut(board.D12),  # B2
+)
+
+for coil in coils:  
+    coil.direction = digitalio.Direction.OUTPUT
+
+motor = stepper.StepperMotor(coils[0], coils[1], coils[2], coils[3], microsteps=None)
+
+for step in range(STEPS):
+    motor.onestep(style=stepper.DOUBLE)
+    time.sleep(DELAY)
+
+
+for step in range(STEPS):
+    motor.onestep(direction=step.BACKWARD, style=stepper.DOUBLE)
+    time.sleep(DELAY)
+
+
+async def catch_pin_transitions(pin):
+    with keypad.Keys((pin,), value_when_pressed=False) as keys:
+        while True:
+            event = keys.events.get()
+            if event:
+                if event.pressed:
+                    print("Limit Switch was pressed")
+                        
+                elif event.released:
+                    print("Limit Switch was released")
+            await asyncio.sleep(0)
+
+async def catch_pin_transition(pin):
+    with keypad.Keys((pin,), value_when_pressed=False) as keys:
+        while True:
+            event = keys.events.get()
+            if event:
+                if event.pressed:
+                    print("Limit Switch was pressed")
+                
+                elif event.released:
+                    print("Limit Switch was released")
+            await asyncio.sleep(0)
+
+async def main():
+    interrupt_task = asyncio.create_task(catch_pin_transition(board.D2))
+    await asyncio.gather(interrupt_task)
+
+
+asyncio.run(main()) 
+
+        
+```
+
+### Evidence
+
+### Reflection
+Man do i absolutely despise coding sometimes. When everything just stops working randomly and you have no solution and mr Miller just says "You got this" or "I believe in you" i just cant. And its even worse when it just randomly starts working out of nowhere an you cant explain it. 
