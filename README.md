@@ -394,19 +394,17 @@ thank you julian
 In this assignment the goal was to make a rotary encoder that would change the light on the board and change what it says on the board based on what the rotary encodewr does. This assignemnt sucked on a diffrent level of annoying because my files would just randomly just stop working every now and then and with no coherant way of being able to fix it. But overall it was relativly easy coding and wiring 
 
 
-## The_
+## The_robo_arm
 # Henry
-# Very Simple plate 
+# The claw 
 
 
 ### Assignment Description
-In this assignment our goal was to make a plate in order to prepare for the onshape certificate exam 
+Make a robot arm that can pick things such as a stack of cards 
 ### Evidence
-![image](https://github.com/hotting45/engr3/assets/143732418/5656334c-1aa3-4a8b-b4e8-4aac4fbcec2b)
-![image](https://github.com/hotting45/engr3/assets/143732418/e2c0cb8b-90f0-4d91-85db-ec5d0e53a1c4)
-
-
+![image](https://github.com/hotting45/engr3/assets/143732418/51bb6142-f29f-4dbc-a0dd-1534ed118304)
+![image](https://github.com/hotting45/engr3/assets/143732418/4b78c327-fd09-457c-b1a6-6e667f208d5e)
 ### Part Link 
-https://cvilleschools.onshape.com/documents/b78a17a8c2373f4d91ded51d/w/ae3b09df0b95fb2665123ed4/e/5ca93e8f7996a2c1288b0a00?renderMode=0&uiState=65450fb56ca5354c20bb29b1
+https://cvilleschools.onshape.com/documents/7cba0d31810a42f9aad7c00f/w/408cd61fe599dccad34ea58a/e/f3b21311ff1bc67460a1a3e3?renderMode=0&uiState=65dcb65d824aca0e1ac6da7d
 ### Reflection
-The most free onshape assignemnt ever finishing it in a few minutes and although it was good practice it was still very easy. Its good prep though for the onshape certification exam with the plate having the basic skills necsassary in order to complete it. Would do it again 8/10 
+This was a fun warmup and overall quiet enjoyable overall. And although i had a bit of trouble assmebling it in the assembly tab i just kept ramming my head into the problem until it eventually started workin. This was a fun first onshape assignment in a while 7/10
