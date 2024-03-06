@@ -486,3 +486,48 @@ asyncio.run(main())
 
 ### Reflection
 Man do i absolutely despise coding sometimes. When everything just stops working randomly and you have no solution and mr Miller just says "You got this" or "I believe in you" i just cant. And its even worse when it just randomly starts working out of nowhere an you cant explain it. 
+
+### Description & Code
+ * ** Sensor
+ * **henry 
+ * ** it senses 
+
+```python
+
+import board
+import digitalio
+import neopixel 
+
+
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)
+led.brightness = 0.3
+
+ir_sensor = digitalio.DigitalInOut(board.D2)
+ir_sensor.direction = digitalio.Direction.INPUT
+ir_sensor.pull = digitalio.Pull.UP
+
+
+led[0] = (255, 0, 0)
+led[0](0, 255, 0) 
+
+
+
+while True:
+        if ir_sensor.value == 0:
+                print("Ir sensor is Low")
+                led[0] = (255, 0, 0)
+            
+  
+
+        if ir_sensor.value == 1:
+           print("sensor triggerd")
+        led[0] = (0, 255, 0)
+           
+
+        
+```
+
+### Evidence
+
+### Reflection
+This was simple in a way that made me think it was complicated to an odd degree. It was in actuality quite simple and overall not that tough. I would rate this a solid 7.5 just because of how hard i made it on myself other than that it was easy. 
