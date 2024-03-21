@@ -330,9 +330,9 @@ https://cvilleschools.onshape.com/documents/a195619daf67fd79ed9d435b/w/138b6f02a
 This assignment the goal was to create a microphone stand comprised of four diffrent pieces a circular base, a T shaped top, and a screw all coming together to make the final piece. I struggled a bit with the bottom piece for some reason? i had to restart it because it would flip uspidedown when i tried to fix the extrude costing me a bit of extra time. But other than that it was smooth sailing getting the top bit done very quickly and the screw was a free little bonus piece that took me a few seconds. Overall a very fun assignemnt that was not as hard as the multipart cylinder would rate it a 9/10 
 
 ### Description & Code
- * **photointerrupter
+ * **Rotary encoder
  * **henry 
- * **Make a photinterrupter read when intterupted 
+ * **rotary encodes all 
 
 ```python
 #import rotaryio
