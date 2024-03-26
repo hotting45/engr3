@@ -403,7 +403,7 @@ thank you julian
 In this assignment the goal was to make a rotary encoder that would change the light on the board and change what it says on the board based on what the rotary encodewr does. This assignemnt sucked on a diffrent level of annoying because my files would just randomly just stop working every now and then and with no coherant way of being able to fix it. But overall it was relativly easy coding and wiring 
 ## Assembly 
 # Henry
-# MAny pieces combine together 
+# Many pieces combine together 
 
 
 ### Assignment Description
