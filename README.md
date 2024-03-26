@@ -189,40 +189,48 @@ HMMMMMMMMMMM i dont like this at all it was too difficult and was probably made 
  * **Make a photinterrupter read when intterupted 
 
 ```python
-from digitalio import DigitalInOut, Direction, Pull
-import time
+import time 
+import digitalio
 import board
+from lcd.lcd import LCD
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface
 
-interrupter = DigitalInOut(board.D7)
-interrupter.direction = Direction.INPUT
-interrupter.pull = Pull.UP
+photointerrupter = digitalio.DigitalInOut(board.D2)
+photointerrupter.direction = digitalio.Direction.INPUT
+photointerrupter.pull = digitalio.Pull.UP
+photointerrupter_state = None
 
-counter = 0
+interrupt_counter = 0
+lcd = LCD(I2CPCF8574Interface(board.I2C(), 0x3f), num_rows=2, num_cols=16)
+lcd.set_cursor_pos(0,0)
+lcd.print("Interrupt count:") 
+now = time.monotonic()
 
-photo = False
-state = False
+while True: 
+    print(interrupt_counter)
+    #print(photointerrupter_state)
+    #print(photointerrupter.value)
+    if not photointerrupter.value and photointerrupter_state is None:
+        photointerrupter_state = "Interrupted"
+       
+    if (photointerrupter.value == True) and (photointerrupter_state == "Interrupted"):
+        photointerrupter_state = None
+        print("Interrupted")
+        interrupt_counter = interrupt_counter +1
+    if (now + 0.003) < time.monotonic(): 
+        now = time.monotonic()
+        lcd.set_cursor_pos(1,0)
+        lcd.print(str(interrupt_counter))
 
-max = 4
-start = time.time()
-while True:
-    photo = interrupter.value
-    if photo and not state:
-            counter += 1
-    state = photo
 
-    remaining = max - time.time()
-
-    if remaining <= 0:
-        print("Number of Interrupts that occured:", str(counter))
-        max = time.time() + 4
-        counter = 0
+  +-
 ```
 
 ### Evidence
 ![316555199-6fecfcb0-394c-4c73-b7d2-8c21778c7bfe](https://github.com/hotting45/engr3/assets/143732418/bef05dd8-a9fb-43cc-bca6-e32ebc1a7f6c)
 **Thanks julian 
 ### Wiring
-![image](https://github.com/hotting45/engr3/assets/143732418/e3c70285-6c41-4483-961c-cf1edda4eaef)
+![image](https://github.com/hotting45/engr3/assets/143732418/201b1ba9-58d4-4775-87f1-986f15176342)
 
 
 ### Reflection
