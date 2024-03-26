@@ -401,7 +401,20 @@ https://github.com/hotting45/engr3/assets/143732418/5a7dd842-ac6f-4d7d-b772-e9c8
 thank you julian
 ### Reflection
 In this assignment the goal was to make a rotary encoder that would change the light on the board and change what it says on the board based on what the rotary encodewr does. This assignemnt sucked on a diffrent level of annoying because my files would just randomly just stop working every now and then and with no coherant way of being able to fix it. But overall it was relativly easy coding and wiring 
+## Assembly 
+# Henry
+# MAny pieces combine together 
 
+
+### Assignment Description
+Put together a bunch of diffrent pieces and make them move together 
+### Evidence
+![image](https://github.com/hotting45/engr3/assets/143732418/2f605bda-2e65-4640-9d04-ad37e25027d0)
+![image](https://github.com/hotting45/engr3/assets/143732418/ac35d21a-8d74-4d12-b8a0-d57cc3fd361b)
+### Evidence 
+https://cvilleschools.onshape.com/documents/fefbd33a534915171bf89a53/w/cf5e95e685668aaeb4e8d2fd/e/44966554d548ca96cea79584?renderMode=0&uiState=6602e4145b8ae267dba88fcc
+### Reflection
+I never liked doing assemblys in the first place so having to do one giant assembly was annoying. I struggled with getting the mates to fit onto eachother correctly for the majority of the time. But it was rewarding to finally have it all together and moving correctly with itself.
 
 ## The_robo_arm
 # Henry
