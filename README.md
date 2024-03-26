@@ -424,72 +424,116 @@ This was a fun warmup and overall quiet enjoyable overall. And although i had a 
  * ** motor be steppin 
 
 ```python
-import asyncio
+import rotaryio #takes code from files.
+import board #takes code from files.
+import neopixel #takes code from files.
+import digitalio #takes code from files.
+from lcd.lcd import LCD #tells you what file it takes the code from.
+from lcd.i2c_pcf8574_interface import I2CPCF8574Interface #tells you what file it takes the code from.
+
+enc = rotaryio.IncrementalEncoder(board.D4, board.D3, divisor = 2) #tells you what pins it use and where to
+
+lcd = LCD(I2CPCF8574Interface(board.I2C(), 0x27), num_rows = 2, num_cols = 16)
+
+led = neopixel.NeoPixel(board.NEOPIXEL, 1)# allows for you to use the led/neopixel
+led.brightness = 0.3
+led[0] = (255, 0, 0)
+
+button = digitalio.DigitalInOut(board.D2)# the code for the button 
+button.direction = digitalio.Direction.INPUT# says that you can use the button as a input
+button.pull = digitalio.Pull.UP
+button_state = None  
+
+menu_index = 0
+
+
+while True:
+    menu_index = enc.position
+    menu = ["stop", "caution", "go"]# the states that the buttion can be in.
+    last_index = None
+    menu[0] = "stop"
+    menu[1] = "caution"
+    menu[2] = "go"  
+    menu_index_lcd = menu_index % 3
+    lcd.set_cursor_pos(0,0)
+    lcd.print("Push for: ")
+    lcd.set_cursor_pos(1,0)
+    lcd.print ("           ")
+    lcd.set_cursor_pos(1,0)
+    lcd.print(menu[menu_index_lcd])
+    print(menu_index_lcd)
+    if not button.value and button_state is None:
+        button_state = "pressed"
+    if button.value and button_state == "pressed":# the state the button is in.
+        print("Button is pressed")
+        button_state = None
+    if menu_index_lcd == 0:
+        led[0] = (255, 0, 0)
+    if menu_index_lcd == 1:
+        led[0] = (255, 255,0)
+    if menu_index_lcd == 2:
+        led[0] = (0, 255, 0) # makes the led color.
+    ```
+
+
+
+### Evidence
+![ezgif com-cut](https://github.com/Jtoney40/engr3/assets/143732462/831b6171-2d30-473a-97ba-f26f110c41eb)
+
+### Wiring 
+![image](https://github.com/Jtoney40/engr3/assets/143732462/5d1d6bba-cdf5-4377-b1e9-29f7a6068e17)
+
+### Reflection 
+The assignment was really easy to do and over all no problems. But make sure your wiring is right.
+
+## CircuitPython_Servo
+
+### Description & Code Snippets
+The goal of the assignment was to get a servo to move 180 in two diffrent directions with a button. I accomplished the goal by working on the button part first so I could get it to work then I did the servo part then added it all togather.
+
+```python
+
+"""CircuitPython Essentials Servo standard servo example"""
+import time
 import board
-import keypad 
-import time 
-import digitalio 
-from adafruit_motor import stepper 
-
-DELAY = 0.01
-STEPS = 100
+import pwmio
+from digitalio import DigitalInOut, Direction, Pull
+from adafruit_motor import servo
 
 
-coils = (
-     digitalio.DigitalInOut(board.D9),   # A1
-     digitalio.DigitalInOut(board.D10),  # A2
-     digitalio.DigitalInOut(board.D11),  # B1  
-     digitalio.DigitalInOut(board.D12),  # B2
-)
+# create a PWMOut object on Pin A2.
+pwm = pwmio.PWMOut(board.A2, duty_cycle=2 ** 15, frequency=50)
 
-for coil in coils:  
-    coil.direction = digitalio.Direction.OUTPUT
+btn1 = DigitalInOut(board.D5)
+btn1.direction = Direction.INPUT
+btn1.pull = Pull.DOWN
 
-motor = stepper.StepperMotor(coils[0], coils[1], coils[2], coils[3], microsteps=None)
+prev_state = btn1.value
 
-for step in range(STEPS):
-    motor.onestep(style=stepper.DOUBLE)
-    time.sleep(DELAY)
+btn2 = DigitalInOut(board.D2)
+btn2.direction = Direction.INPUT
+btn2.pull = Pull.DOWN
 
+prev_state = btn2.value
+# Create a servo object, my_servo.
+my_servo = servo.Servo(pwm)
 
-for step in range(STEPS):
-    motor.onestep(direction=step.BACKWARD, style=stepper.DOUBLE)
-    time.sleep(DELAY)
-
-
-async def catch_pin_transitions(pin):
-    with keypad.Keys((pin,), value_when_pressed=False) as keys:
-        while True:
-            event = keys.events.get()
-            if event:
-                if event.pressed:
-                    print("Limit Switch was pressed")
-                        
-                elif event.released:
-                    print("Limit Switch was released")
-            await asyncio.sleep(0)
-
-async def catch_pin_transition(pin):
-    with keypad.Keys((pin,), value_when_pressed=False) as keys:
-        while True:
-            event = keys.events.get()
-            if event:
-                if event.pressed:
-                    print("Limit Switch was pressed")
-                
-                elif event.released:
-                    print("Limit Switch was released")
-            await asyncio.sleep(0)
-
-async def main():
-    interrupt_task = asyncio.create_task(catch_pin_transition(board.D2))
-    await asyncio.gather(interrupt_task)
-
-
-asyncio.run(main()) 
-
+while True:
+    if btn1.value:
+        print("BTN1  is down")  
+        for angle in range(0, 180, 5):  # 0 - 180 degrees, 5 degrees at a time.
+            my_servo.angle = angle
+      
+    if btn2.value:
+        print("BTN2  is down") 
+        for angle in range(180, 0, -5): # 180 - 0 degrees, 5 degrees at a time.
+            my_servo.angle = angle
+    
+    time.sleep(0.35) 
+  +-
         
 ```
+###Credits to will Wright for the code
 
 ### Evidence
 ![image](https://github.com/hotting45/engr3/assets/143732418/b121a223-f9f1-4029-8678-73a7efe27afd)
