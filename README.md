@@ -437,55 +437,85 @@ This was a fun warmup and overall quiet enjoyable overall. And although i had a 
  * ** motor be steppin 
 
 ```python
-import rotaryio #takes code from files.
-import board #takes code from files.
-import neopixel #takes code from files.
-import digitalio #takes code from files.
-from lcd.lcd import LCD #tells you what file it takes the code from.
-from lcd.i2c_pcf8574_interface import I2CPCF8574Interface #tells you what file it takes the code from.
-
-enc = rotaryio.IncrementalEncoder(board.D4, board.D3, divisor = 2) #tells you what pins it use and where to
-
-lcd = LCD(I2CPCF8574Interface(board.I2C(), 0x27), num_rows = 2, num_cols = 16)
-
-led = neopixel.NeoPixel(board.NEOPIXEL, 1)# allows for you to use the led/neopixel
-led.brightness = 0.3
-led[0] = (255, 0, 0)
-
-button = digitalio.DigitalInOut(board.D2)# the code for the button 
-button.direction = digitalio.Direction.INPUT# says that you can use the button as a input
-button.pull = digitalio.Pull.UP
-button_state = None  
-
-menu_index = 0
+import asyncio
+import board
+import keypad
+import time
+import digitalio
+from adafruit_motor import stepper
 
 
-while True:
-    menu_index = enc.position
-    menu = ["stop", "caution", "go"]# the states that the buttion can be in.
-    last_index = None
-    menu[0] = "stop"
-    menu[1] = "caution"
-    menu[2] = "go"  
-    menu_index_lcd = menu_index % 3
-    lcd.set_cursor_pos(0,0)
-    lcd.print("Push for: ")
-    lcd.set_cursor_pos(1,0)
-    lcd.print ("           ")
-    lcd.set_cursor_pos(1,0)
-    lcd.print(menu[menu_index_lcd])
-    print(menu_index_lcd)
-    if not button.value and button_state is None:
-        button_state = "pressed"
-    if button.value and button_state == "pressed":# the state the button is in.
-        print("Button is pressed")
-        button_state = None
-    if menu_index_lcd == 0:
-        led[0] = (255, 0, 0)
-    if menu_index_lcd == 1:
-        led[0] = (255, 255,0)
-    if menu_index_lcd == 2:
-        led[0] = (0, 255, 0) # makes the led color.
+DELAY = 0.01   # Sets the delay time for in-between each step of the stepper motor.
+STEPS = 100    # Sets the number of steps. 100 is half a full rotation for the motor we're using. 
+
+# Set up the digital pins used for the four wires of the stepper motor. 
+coils = (
+    digitalio.DigitalInOut(board.D9),   # A1
+    digitalio.DigitalInOut(board.D10),  # A2
+    digitalio.DigitalInOut(board.D11),  # B1
+    digitalio.DigitalInOut(board.D12),  # B2
+)
+
+# Sets each of the digital pins as an output.
+for coil in coils:
+    coil.direction = digitalio.Direction.OUTPUT
+
+# Creates an instance of the stepper motor so you can send commands to it (using the Adafruit Motor library). 
+motor = stepper.StepperMotor(coils[0], coils[1], coils[2], coils[3], microsteps=None)
+
+motor.onestep()
+
+motor.onestep(direction=stepper.BACKWARD) # tells the motor to go backwards
+
+style=stepper.DOUBLE #how much it does it.
+
+for step in range(STEPS): # tells the motor how to work
+    motor.onestep(style=stepper.DOUBLE)
+    time.sleep(DELAY)
+
+
+for step in range(STEPS): 
+    motor.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+    time.sleep(DELAY)
+
+async def catch_pin_transitions(pin):
+    # Print a message when pin goes low and when it goes high.
+    with keypad.Keys((pin,), value_when_pressed=False) as keys:
+        while True:
+            event = keys.events.get()
+            if event:
+                if event.pressed:
+                    print("Limit Switch was pressed.")
+                    motor.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+
+                elif event.released:
+                    print("Limit Switch was released.")
+                    motor.onestep(direction=stepper.FORWARD, style=stepper.DOUBLE)
+                await asyncio.sleep(0)
+
+async def run_motor():
+    while(True):
+        motor.onestep(style= stepper.DOUBLE)
+        time.sleep(DELAY) 
+        motor.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+        time.sleep(DELAY)
+
+        await asyncio.sleep(0)
+
+async def main():
+    while(True):
+        interrupt_task = asyncio.create_task(catch_pin_transitions(board.D2))
+        asyncio.create_task(run_motor())
+        motor.onestep(style-stepper.DOUBLE)
+        time.sleep(DELAY)
+        motor.onestep(direction=stepper.BACKWARD, style=stepper.DOUBLE)
+        time.sleep(DELAY)
+        await asyncio.gather(interrupt_task, 
+                            catch_pin_transitions(board.D2))
+        
+
+asyncio.run(main())
+ 
     ```
 
 
