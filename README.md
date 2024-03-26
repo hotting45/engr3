@@ -492,9 +492,11 @@ asyncio.run(main())
 ```
 
 ### Evidence
-
+![image](https://github.com/hotting45/engr3/assets/143732418/b121a223-f9f1-4029-8678-73a7efe27afd)
+### Wiring
+![image](https://github.com/hotting45/engr3/assets/143732418/e51f430b-af6a-4a13-889a-c8e9d0237071)
 ### Reflection
-Man do i absolutely despise coding sometimes. When everything just stops working randomly and you have no solution and mr Miller just says "You got this" or "I believe in you" i just cant. And its even worse when it just randomly starts working out of nowhere an you cant explain it. 
+Man do i absolutely despise coding sometimes. When everything just stops working randomly and you have no solution and mr Miller just says "You got this" or "I believe in you" i just cant. And its even worse when it just randomly starts working out of nowhere an you cant explain it. Thank you julian for video and wiring diagram 
 
 ### Description & Code
  * ** Sensor
