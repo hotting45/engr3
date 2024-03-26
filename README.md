@@ -228,7 +228,7 @@ while True:
 
 ### Evidence
 ![316555199-6fecfcb0-394c-4c73-b7d2-8c21778c7bfe](https://github.com/hotting45/engr3/assets/143732418/bef05dd8-a9fb-43cc-bca6-e32ebc1a7f6c)
-**Thanks julian 
+**Thanks julian for diagram and video 
 ### Wiring
 ![image](https://github.com/hotting45/engr3/assets/143732418/201b1ba9-58d4-4775-87f1-986f15176342)
 
