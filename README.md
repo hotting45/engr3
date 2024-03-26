@@ -583,7 +583,6 @@ while True:
 ```
 
 ### Evidence
-![image](https://github.com/hotting45/engr3/assets/143732418/5d6dc2ae-ecb8-4296-b5b2-d4f35ec34ebc)
-
+https://private-user-images.githubusercontent.com/143732462/312159836-cea4c8a2-83ce-4658-862f-70d8a654269b.gif?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTE0NjQ2NjMsIm5iZiI6MTcxMTQ2NDM2MywicGF0aCI6Ii8xNDM3MzI0NjIvMzEyMTU5ODM2LWNlYTRjOGEyLTgzY2UtNDY1OC04NjJmLTcwZDhhNjU0MjY5Yi5naWY_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwMzI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDMyNlQxNDQ2MDNaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1kYjg5NjYxNTUwYzRiMmQyYjg4NTcyMTRjODNmMWU3NzkzZTBiNTliOWRkNjcxMjRhNmFiMTZmNGYxYzM2OWMxJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.5hpQ0ETfWyXMi0yhiWEoRl32Jmmk2XC9RleUvGeT_qs
 ### Reflection
 This was simple in a way that made me think it was complicated to an odd degree. It was in actuality quite simple and overall not that tough. I would rate this a solid 7.5 just because of how hard i made it on myself other than that it was easy. 
